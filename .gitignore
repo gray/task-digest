@@ -1,0 +1,5 @@
+Makefile
+Makefile.old
+Task-Digest-*
+blib/
+pm_to_blib
