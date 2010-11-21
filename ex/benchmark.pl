@@ -7,6 +7,7 @@ use Getopt::Long qw(GetOptions :config no_ignore_case);
 use List::Util qw(max);
 
 # Install Task::Digest
+use Crypt::RIPEMD160      ();
 use Digest::BLAKE         ();
 use Digest::BMW           ();
 use Digest::CubeHash      ();
@@ -95,6 +96,9 @@ my %digests = (
     perl_sha_256 => sub { Digest::SHA::PurePerl::sha256($data) },
     perl_sha_384 => sub { Digest::SHA::PurePerl::sha384($data) },
     perl_sha_512 => sub { Digest::SHA::PurePerl::sha512($data) },
+    ripemd_160   => sub {
+        my $c = Crypt::RIPEMD160->new; $c->add($data); $c->digest;
+    },
     sha1_sha_1   => sub { Digest::SHA1::sha1($data) },
     sha_sha_1    => sub { Digest::SHA::sha1($data) },
     sha_224      => sub { Digest::SHA::sha224($data) },

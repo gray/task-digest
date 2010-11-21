@@ -15,6 +15,7 @@ my %conf = (
     VERSION_FROM  => 'lib/Task/Digest.pm',
     ABSTRACT_FROM => 'lib/Task/Digest.pm',
     PREREQ_PM => {
+        'Crypt::RIPEMD160'          => 0,
         'Digest::BLAKE'             => 0,
         'Digest::BMW'               => 0,
         # 'Digest::CubeHash'          => 0,
