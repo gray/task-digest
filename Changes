@@ -1,5 +1,8 @@
 Revision history for Task-Digest
 
+0.03  Thu Nov 25 06:47:24 UTC 2010
+    - Added Digest::GOST.
+
 0.02  Sun Nov 21 17:53:24 UTC 2010
     - Added Crypt::RIPEMD160.
 
