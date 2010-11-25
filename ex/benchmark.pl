@@ -13,6 +13,7 @@ use Digest::BMW           ();
 use Digest::CubeHash      ();
 use Digest::ECHO          ();
 use Digest::Fugue         ();
+use Digest::GOST          ();
 use Digest::Groestl       ();
 use Digest::Hamsi         ();
 use Digest::JH            ();
@@ -62,6 +63,7 @@ my %digests = (
     fugue_256    => sub { Digest::Fugue::fugue_256($data) },
     fugue_384    => sub { Digest::Fugue::fugue_384($data) },
     fugue_512    => sub { Digest::Fugue::fugue_512($data) },
+    gost         => sub { Digest::GOST::gost($data) },
     groestl_224  => sub { Digest::Groestl::groestl_224($data) },
     groestl_256  => sub { Digest::Groestl::groestl_256($data) },
     groestl_384  => sub { Digest::Groestl::groestl_384($data) },

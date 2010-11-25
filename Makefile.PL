@@ -21,6 +21,7 @@ my %conf = (
         # 'Digest::CubeHash'          => 0,
         'Digest::ECHO'              => 0,
         'Digest::Fugue'             => 0,
+        'Digest::GOST'              => 0,
         'Digest::Groestl'           => 0,
         'Digest::Hamsi'             => 0,
         'Digest::JH'                => 0,
