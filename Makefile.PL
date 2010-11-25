@@ -20,6 +20,7 @@ my %conf = (
         'Digest::BMW'               => 0,
         # 'Digest::CubeHash'          => 0,
         'Digest::ECHO'              => 0,
+        'Digest::EdonR'             => 0,
         'Digest::Fugue'             => 0,
         'Digest::GOST'              => 0,
         'Digest::Groestl'           => 0,

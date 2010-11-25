@@ -12,6 +12,7 @@ use Digest::BLAKE         ();
 use Digest::BMW           ();
 use Digest::CubeHash      ();
 use Digest::ECHO          ();
+use Digest::EdonR         ();
 use Digest::Fugue         ();
 use Digest::GOST          ();
 use Digest::Groestl       ();
@@ -59,6 +60,10 @@ my %digests = (
     echo_256     => sub { Digest::ECHO::echo_256($data) },
     echo_384     => sub { Digest::ECHO::echo_384($data) },
     echo_512     => sub { Digest::ECHO::echo_512($data) },
+    edonr_224    => sub { Digest::EdonR::edonr_224($data) },
+    edonr_256    => sub { Digest::EdonR::edonr_256($data) },
+    edonr_384    => sub { Digest::EdonR::edonr_384($data) },
+    edonr_512    => sub { Digest::EdonR::edonr_512($data) },
     fugue_224    => sub { Digest::Fugue::fugue_224($data) },
     fugue_256    => sub { Digest::Fugue::fugue_256($data) },
     fugue_384    => sub { Digest::Fugue::fugue_384($data) },
