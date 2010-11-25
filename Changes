@@ -1,5 +1,8 @@
 Revision history for Task-Digest
 
+0.03  Thu Nov 25 11:22:37 UTC 2010
+    - Added Digest::EdonR.
+
 0.03  Thu Nov 25 06:47:24 UTC 2010
     - Added Digest::GOST.
 
