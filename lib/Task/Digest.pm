@@ -209,7 +209,7 @@ L<http://rt.cpan.org/Public/Dist/Display.html?Name=Task-Digest>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/Task-Digest>
+L<http://search.cpan.org/dist/Task-Digest/>
 
 =back
 
