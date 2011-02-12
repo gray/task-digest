@@ -31,7 +31,7 @@ cryptographic message digests.
 
 =item * L<Digest::BMW>
 
-=item * L<Digest::CubeHash>
+=item * L<Digest::CubeHash::XS>
 
 =item * L<Digest::ECHO>
 

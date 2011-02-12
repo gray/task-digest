@@ -2,12 +2,6 @@ use strict;
 use warnings;
 use ExtUtils::MakeMaker;
 
-# Digest::CubeHash is currently using an unauthorized namespace.
-my @prereq;
-unless (eval 'use Digest::CubeHash; 1') {
-    push @prereq, 'G/GR/GRAY/Digest-CubeHash-0.03.tar.gz' => 0;
-}
-
 my %conf = (
     NAME          => 'Task::Digest',
     AUTHOR        => 'gray <gray@cpan.org>',
@@ -18,7 +12,7 @@ my %conf = (
         'Crypt::RIPEMD160'          => 0,
         'Digest::BLAKE'             => 0,
         'Digest::BMW'               => 0,
-        # 'Digest::CubeHash'          => 0,
+        'Digest::CubeHash::XS'      => 0,
         'Digest::ECHO'              => 0,
         'Digest::EdonR'             => 0,
         'Digest::Fugue'             => 0,
@@ -42,7 +36,6 @@ my %conf = (
         'Digest::Shabal'            => 0,
         'Digest::Skein'             => 0,
         'Digest::Whirlpool'         => 0,
-        @prereq,
     },
     BUILD_REQUIRES => { 'Test::More' => 0.82, },
     META_MERGE     => {
